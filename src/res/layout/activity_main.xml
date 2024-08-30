@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.camera.view.PreviewView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cameraPreview"/>
+
+    <ImageButton
+        android:id="@+id/flipCamera"
+        android:layout_width="54dp"
+        android:layout_height="63dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10sp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/round_flip_camera_android_24"
+        app:tint="#fff"
+        android:contentDescription="Camera Flipping button"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/inputField"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submitButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="#E0E0E0"
+        android:hint="Enter server IP"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FF5722"
+        android:text="Send"
+        android:textColor="#212121"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
